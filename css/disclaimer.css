@@ -1,0 +1,305 @@
+@charset "utf-8";
+/* CSS Document */
+*{box-sizing: border-box;}
+body{ width:100%; padding:0; margin:0; background:#1E1F22;  font-family: 'Poppins', sans-serif; }
+
+a{ outline:none;text-decoration:none; }
+a:focus, a:hover{ outline:none; text-decoration:none; }
+ul{ padding:0; margin:0; list-style:none; }
+img.img-fluid{
+	max-width: 100%;
+	height: auto;
+}
+a {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+}
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('../fonts/TimesNewRomanPS-BoldMT.woff2') format('woff2'),
+        url('../fonts/TimesNewRomanPS-BoldMT.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+/**** disc-main *****/
+
+.disc-main {
+    margin: 0px 0px 0px 0px;
+    padding: 60px 0px 0px 0px;
+    background: transparent;
+    overflow: hidden;
+    width: 100%;
+}
+.disc-main-row {
+    margin: 0px 0px 0px 25px;
+    padding: 35px 0px 20px 0px;
+    width: 100%;
+    border-radius: 40px 0px 0px 40px;
+    background: #f5f5fb;
+}
+.disc-main-text {
+    margin: 0px auto 0px auto;
+    padding: 0px 0px 0px 0px;
+    width: 70%;
+}
+.disc-main-text p{
+    margin: 0px 0px 11px 0px;
+    padding: 0px 0px 0px 0px;
+    font-weight: normal;
+    font-size: 18px;
+    color: #28292a;
+    text-align: justify;
+    line-height: 37px;
+}
+.disc-main-text p.last{
+    margin: 0px 0px 0px 0px;
+} 
+.disc-main-text h6 {
+    margin: 0px 0px 12px 0px;
+    padding: 0px 0px 0px 0px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #28292a;
+    text-align: justify;
+    line-height: 31px;
+    font-family: 'Roboto', sans-serif;
+}
+.disc-main-text h6.last {
+    margin: 0px auto 18px auto;
+}    
+
+/****** responsive *****/
+
+@media (max-width :767px) and (min-device-width :280px){
+
+
+}
+
+
+/*** accordian *****/
+
+.card-header {
+    padding: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-bottom: 0px solid rgba(0,0,0,.125);
+    border-radius: 0px !important;
+}
+.card {
+    background-color: transparent;
+    border: 0px solid rgba(0,0,0,.125);
+    border-radius: 0;
+}
+.card-body {
+    padding: 0px 0px 22px 13px;
+}
+a.card-link {
+    margin: 0px 0px 0px 0px;
+    padding: 8px 48px 5px 0px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #28292a;
+    background: url(../img/minus.png) right 5px no-repeat;
+    width: max-content;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+a.card-link h5 {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+a.card-link.collapsed{
+    background: url(../img/plus.png) right 0px center no-repeat;
+}
+a.card-link span{
+    margin: 0px 10px 0px 0px;
+}
+.card-text{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.card-text p {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 24px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #1e1f22;
+    line-height: 34px;
+    font-family: 'Roboto', sans-serif;
+}
+.card-text ul{
+    margin: 18px 0px 21px 0px;
+    padding: 0px 0px 0px 0px;
+} 
+.card-text ul li{
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #424242;
+    display: flex;
+} 
+.card-text ul li span{
+    margin: 0px 15px 0px 0px;
+} 
+.card-text ul li span.tw{
+    margin: 0px 0px 0px 0px;
+} 
+.card-text ul li.last{
+    margin: 0px 0px 0px 0px;
+} 
+@media (max-width :1660px) and (min-device-width :1280px){
+/*a.card-link h5 {
+    font-size: 16px;
+}*/
+}
+.modal-dialog2 {
+    margin: 60px auto 0px auto !important;
+}
+
+
+/****** responsive *****/
+
+@media (max-width :1660px) and (min-device-width :1280px){
+
+
+/** about */
+.disc-main-row {
+    padding: 35px 40px 38px 0px;    
+}
+.disc-main-text {
+    width: 70%;
+}
+
+
+}
+@media (max-width :991px) and (min-device-width :768px){
+.disc-main-text {
+    width: 70%;
+}
+
+}
+
+
+h5.mob{
+    display: none;
+}
+@media (max-width :767px) and (min-device-width :280px){
+
+.disc-main-text {
+    width: 100%;
+    padding: 0px 30px 0px 16px;
+}
+.disc-main-text h6 {
+    margin: 0px auto 10px auto;
+    font-size: 16px;
+    line-height: 31px;
+}
+.disc-main-text h6.last {
+    margin: 0px auto 25px auto;
+}
+a.card-link h5 {
+    font-size: 14px;
+}
+a.card-link {
+    margin: 0px 0px 5px 0px;
+    padding: 8px 26px 0px 15px;
+}
+a.card-link {
+    background: url(../img/minus.png) right 6px no-repeat;
+    background-size: 23px;
+    width: max-content;
+} 
+a.card-link.collapsed {
+    background: url(../img/plus.png) right 6px no-repeat;
+    background-size: 23px;
+    width: max-content;
+}
+a.card-link::before {
+    margin: 18px 0px 0px 0px;
+    top: -4px;
+    left: 4px;
+    width: 5px;
+    height: 5px;
+}
+.card-text p {
+    padding: 0px 0px 0px 14px;
+    font-size: 13px;
+    line-height: 24px;
+}
+.card-body {
+    padding: 0px 0px 0px 0px;
+}
+
+
+h5.dsk{
+    display: none;
+}
+h5.mob{
+    display: block;
+}
+a.card-link2.collapsed {
+    background: url(../img/plus.png) left 90px bottom -8px no-repeat;
+    background-size: 28px;
+}
+a.card-link2 {
+    background: url(../img/minus.png) left 90px bottom -8px no-repeat;
+    background-size: 28px;
+}
+a.card-link3.collapsed {
+    background: url(../img/plus.png) right 36px bottom -8px no-repeat;
+    background-size: 28px;
+}
+a.card-link3 {
+    background: url(../img/minus.png) right 36px bottom -8px no-repeat;
+    background-size: 28px;
+}
+a.card-link4.collapsed {
+    background: url(../img/plus.png) right 100px bottom -8px no-repeat;
+    background-size: 28px;
+}
+a.card-link4 {
+    background: url(../img/minus.png) right 100px bottom -8px no-repeat;
+    background-size: 28px;
+}
+a.card-link5.collapsed {
+    background: url(../img/plus.png) right 60px bottom -8px no-repeat;
+    background-size: 28px;
+}
+a.card-link5 {
+    background: url(../img/minus.png) right 60px bottom -8px no-repeat;
+    background-size: 28px;
+}
+a.card-link6.collapsed {
+    background: url(../img/plus.png) right 60px bottom -8px no-repeat;
+    background-size: 28px;
+}
+a.card-link6 {
+    background: url(../img/minus.png) right 60px bottom -8px no-repeat;
+    background-size: 28px;
+}
+a.card-link::before {
+    margin: 18px 0px 0px 0px;
+    top: -4px;
+    left: 4px;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    content: '';
+    background: url(../img/dot.png) center center no-repeat;
+    border-radius: 50%;
+}
+a.card-link span {
+    display: none;
+}
+}

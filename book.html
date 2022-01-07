@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>KibiBooks</title>
+		 <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+		<link href="css/countrySelect.min.css" type="text/css" rel="stylesheet">
+		<!--Website CSS -->
+		<link href="css/style.css" type="text/css" rel="stylesheet">
+		<link href="css/aside.css" type="text/css" rel="stylesheet">
+		<link href="css/book.css" type="text/css" rel="stylesheet">
+		<!-- FontAwesome CSS -->
+		<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+		<!-- Custom Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<style>
+			/* Initially, hide the extra text that
+				can be revealed with the button */
+			#moreText {
+	  
+				/* Display nothing for the element */
+				display: none;
+			}
+		</style>
+	 </head>
+   <body>
+      <div class="main-body">
+		<div class="item-main">
+			<div class="item-main-row">
+				<div class="mob-menu">
+					<div class="header-row">
+						<a class="sm-logo" href="index.html"><img src="img/mobile-logo.png" class="log-pic img-fluid"></a>
+						<div class="dropdown">
+							<button id="first" type="button" class="tg-btn" data-toggle="dropdown"></button>
+							<div id="mySide" class="sidebar2">
+								<div onClick="topFunction(this)" id="myBtn" class="neew2">
+									<div class="texts">
+										<a href="#" id="closebtn" class="closebtn2"><i class="fas fa-times"></i></a>
+										<div class="left">
+											
+											<div class="login-register login-register2 login-registerr">
+												<div class="dropdown">
+													<a href="#" onclick="myFunction()" class="dropbtn anti-dbtn">
+														Welcome Anti
+													   <div id="myDropdown" class="dropdown-content">
+														  <a href="#">Sign Out</a>
+														  <a href="#">Unregister</a>
+														</div>
+													</a>
+												  </div>
+											</div>
+											<div class="sell-books">
+												<a href="index2.html">Sell TextBooks</a>
+											</div>
+											<div class="sell-books sell-books2">
+												<a href="item.html" class="item">Recently Viewed</a>
+											</div>
+											
+											<div class="items">
+												
+												<div class="searches">
+													<div class="search-box search-box2">
+														<h4 class="spn">0198708636
+														</h4>
+													</div>
+													
+													
+													<div class="clear-box">
+														<a href="#">Clear Searches</a>
+													</div>
+												</div>
+											</div>
+											<div class="other-links">
+												<a href="university.html">University Pages</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					  </div>   
+					</div>
+				</div>
+				<div class="top-block">
+					<div class="left left2">
+						<a href="index.html" class="cnt-logo"><img src="img/logo.png" class="img-fluid cnt-lgo" alt=""></a>		
+						<div class="logo-block">
+							
+						</div>
+						<div class="login-register login-register2 login-registerr">
+							<div class="dropdown">
+								<a href="#"  data-bs-toggle="collapse" data-bs-target="#demo" class="dropbtn anti-dbtn">Welcome Anti</a>
+									
+								<div id="demo" class="collapse dropdown-content">
+									  <a href="#">Sign Out</a>
+									  <a href="#">Unregister</a>
+									</div>
+								
+							  </div>
+						</div>
+						<div class="sell-books">
+							<a href="index2.html">Sell TextBooks</a>
+						</div>
+						<div class="sell-books sell-books2">
+							<a href="item.html" class="item">Recently Viewed</a>
+						</div>
+						
+						<div class="items">
+							
+							<div class="searches">
+								<div class="search-box search-box2">
+									<h4 class="spn">0198708636
+									</h4>
+								</div>
+								
+								
+								<div class="clear-box">
+									<a href="#">Clear Searches</a>
+								</div>
+							</div>
+						</div>
+						<div class="other-links">
+							<a href="university.html">University Pages</a>
+						</div>
+					</div>
+					<div class="right">
+						<div class="search-country-bar item-search">
+							<div class="search-bar">
+							<div class="search-box">
+								<input type="text" placeholder="Search for ISBN, Title or Author">
+								<button><i class="far fa-search"></i></button>
+							</div>
+							</div>
+							<div class="new-dpn">
+							<div class="dropdown">
+								<button class="button" type="button" class="btn" data-toggle="dropdown">
+									<img src="img/flag.png" class="flag img-fluid">
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item"  href="#" target="_blank"><img src="img/flag1.png" class="img-fluid"></a>
+									<a class="dropdown-item"  href="#" target="_blank"><img src="img/flag2.png" class="img-fluid"></a>
+									<a class="dropdown-item"  href="#" target="_blank"><img src="img/flag4.png" class="img-fluid"></a>
+									<a class="dropdown-item dropdown-item-last"  href="#" target="_blank"><img src="img/flag3.png" class="img-fluid"></a>
+								</div>
+							</div>  
+							</div>
+						</div>
+						<div class="all-content-block">
+							<div class="all-content-top">
+								<div class="poster-box">
+									<div class="mob-txt">
+										<h4>Joseph F. Boudreau and 1 more</h4>
+										<h1>Applied Computational Physics 
+											<span>Illustrated Edition</span>
+										<p><strong>ISBN-10:</strong> XXXXXXXX48, <strong>ISBN-13:</strong> XXX-XXXXXXXX48</p>	
+										</h1>
+										
+										<img src="img/stars.png" class="img-fluid strs2" alt="">
+									</div>
+									<img src="img/book.png" alt="">
+									<a href="#" class="selit" style="background: #e6e6ea;border: 1px solid #e6e6ea;color: #fff !important;">Sell It</a>
+									<a href="#" class="selit selit2" style="background: #e6e6ea;border: 1px solid #e6e6ea;color: #fff !important;">Sell It</a>
+									<div class="mob-version">
+										<ul>
+											<li class="one"><strong>List Price:</strong> <span>$000<sup>00</sup></span></li>
+											
+											<li><strong>Publisher:</strong> Bedford/St. Martin's</li>
+											<li><strong>Format:</strong> Hardcover</li>	
+										</ul>
+										<div class="about-section about-section2">
+											<p>For over a decade, The Language of Composition<span id="dots2">...</span> 
+												
+												<p id="more2" style="display: none;"><span>has been the most successful textbook written For over a decade, The Language of Composition has been the most successful textbook written 
+													for the AP® English Language and Composition Course. Now, its esteemed author team is back, 
+													giving practical instruction geared toward training students to read and write at the college 
+													level. The textbook is organized in two parts: opening chapters that develop key rhetoric, 
+													argument, and synthesis skills; followed by thematic chapters comprised of the finest classic 
+													and contemporary nonfiction and visual texts. With engaging readings and reliable instruction,
+													The Language of Composition gives every students the opportunity for success in AP® English 
+													Language.<br> AP® is a trademark registered and/or owned by the College Board, which was not involved in 
+													the production of, and does not endorse, this product.</span></p>
+												<button id="btnMoreLess2" class="ls" type="button" onclick="ReadMoreLess2()">
+													<span id="lblText2">Show More</span>&nbsp; <i id="iMoreLess2" class="fas fa-chevron-right"></i>
+												</button>
+												
+										</div>
+									</div>
+									<img src="img/stars.png" class="img-fluid strs" alt="">
+									
+								</div>
+								<div class="movie-desc">
+									<div class="desk-txt">
+										<h1>Applied Computational Physics Illustrated Edition</h1>
+										<h4>by Joseph F. Boudreau, Eric S. Swanson (Authors)</h4>
+									</div>
+									<div class="list-items">
+										<ul>
+											<li><strong>List Price:</strong> <span>$000<sup>00</sup></span></li>
+											<li><strong>ISBN-10:</strong> XXXXXXXX48</li>
+											<li><strong>ISBN-13</strong>: XXX-XXXXXXXX48</li>
+										</ul>
+										<ul>
+											<li><strong>Edition:</strong> XXX</li>
+											<li><strong>Publisher:</strong> Bedford/St. Martin's</li>
+											<li><strong>Format:</strong> Hardcover</li>	
+										</ul>
+									</div>
+									<div class="about-section">
+										<p>For over a decade, The Language of Composition has been the most successful textbook written 
+											<p>
+												For over a decade, The Language of Composition has been the most successful textbook written 
+												for the AP® English Language and Composition Course. Now, its esteemed author team is back, 
+												giving practical instruction geared toward training students to read and write at the college 
+												level.<span id="dots">...</span>
+											</p>
+											<p id="more" style="display: none;"><span>The textbook is organized in two parts: opening chapters that develop key rhetoric, 
+												argument, and synthesis skills; followed by thematic chapters comprised of the finest classic 
+												and contemporary nonfiction and visual texts. With engaging readings and reliable instruction,
+												The Language of Composition gives every students the opportunity for success in AP® English 
+												Language.<br> AP® is a trademark registered and/or owned by the College Board, which was not involved in 
+												the production of, and does not endorse, this product.</span></p>
+											<button id="btnMoreLess" class="ls" type="button" onclick="ReadMoreLess()">
+												<span id="lblText">Show More</span>&nbsp; <i id="iMoreLess" class="fas fa-chevron-right"></i>
+											</button>
+											
+									</div>
+								</div>
+								<div class="best-prices-section">
+									<h2>Best Prices</h2>
+									<div class="price-list">
+										<div class="item">
+											<p>New</p>
+											<strong>$000<sup>00</sup></strong>
+											<a href="#" class="yellow-small">Buy It</a>
+										</div>
+										<div class="item">
+											<p>Used</p>
+											<strong>$000<sup>00</sup></strong>
+											<a href="#" class="yellow-small">Buy It</a>
+										</div>
+										<div class="item">
+											<p>Digital</p>
+											<strong>$000<sup>00</sup></strong>
+											<a href="#" class="yellow-small">Buy It</a>
+										</div>
+										<div class="item">
+											<p>Rentals</p>
+											<strong>$000<sup>00</sup></strong>
+											<a href="#" class="blue-small">Rent It</a>
+										</div>
+										<div class="item">
+											<p>Digital Rentals</p>
+											<strong>$000<sup>00</sup></strong>
+											<a href="#" class="blue-small">Rent It</a>
+										</div>
+										<div class="item">
+											<p>Study Guides</p>
+											<strong>$000<sup>00</sup></strong>
+											<a href="#" class="yellow-small">Buy It</a>
+										</div>
+										<div class="item">
+											<p>Audio</p>
+											<strong>$000<sup>00</sup></strong>
+											<a href="#" class="yellow-small">Buy It</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="details">
+								<div class="detail1">
+									<ul class="hdr">
+										<li class="one">New</li>
+										<li class="two mbl-vrsn">Coupons</li>
+										<li class="three">Price</li>
+										<li class="last"></li>
+									</ul>
+									<ul class="lines">
+										<li class="one"><img src="img/amazon.png" class="img-fluid amzn" alt=""></li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn">Buy It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one">vendor 2</li>
+										<li class="two"><img src="img/coupon.png" class="img-fluid cupon" alt=""></li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn">Buy It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one">vendor 3</li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn">Buy It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one">vendor 4</li>
+										<li class="two"><img src="img/coupon.png" class="img-fluid cupon" alt=""></li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn">Buy It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one">vendor 5</li>
+										<li class="two"><img src="img/coupon.png" class="img-fluid cupon" alt=""></li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn grey-btn">Buy It</a></li>
+									</ul>
+									<ul class="lines lst-ln">
+										<li class="one">vendor 6</li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn grey-btn">Buy It</a></li>
+									</ul>
+								</div>
+								<div class="detail1">
+									<ul class="hdr">
+										<li class="one">Used</li>
+										<li class="two mbl-vrsn">Coupons</li>
+										<li class="three">Price</li>
+										<li class="last"></li>
+									</ul>
+									<ul class="lines">
+										<li class="one cmn">vendor 1<span>Conditions</span></li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn">Buy It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one cmn">vendor 2<span>Conditions</span></li>
+										<li class="two"><img src="img/coupon.png" class="img-fluid cupon" alt=""></li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn">Buy It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one cmn">vendor 3<span>Conditions</span></li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn">Buy It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one cmn">vendor 4<span>Conditions</span></li>
+										<li class="two"><img src="img/coupon.png" class="img-fluid cupon" alt=""></li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn">Buy It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one cmn">vendor 5<span>-</span></li>
+										<li class="two"><img src="img/coupon.png" class="img-fluid cupon" alt=""></li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn grey-btn">Buy It</a></li>
+									</ul>
+									<ul class="lines lst-ln">
+										<li class="one cmn">vendor 6<span>Conditions</span></li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn grey-btn">Buy It</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="details">
+								<div class="detail1">
+									<ul class="hdr">
+										<li class="one">Digital</li>
+										<li class="two mbl-vrsn">Coupons</li>
+										<li class="three">Price</li>
+										<li class="last"></li>
+									</ul>
+									<ul class="lines">
+										<li class="one">vendor 1</li>
+										<li class="two"><img src="img/coupon.png" class="img-fluid cupon" alt=""></li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn">Buy It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one">vendor 2</li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn">Buy It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one">vendor 3</li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn">Buy It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one">vendor 4</li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn">Buy It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one">vendor 5</li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn grey-btn">Buy It</a></li>
+									</ul>
+									<ul class="lines lst-ln">
+										<li class="one">vendor 6</li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three">-</li>
+										<li class="last"><a href="#" class="buy-btn grey-btn">Buy It</a></li>
+									</ul>
+								</div>
+								<div class="detail1">
+									<ul class="hdr">
+										<li class="one">Rentals</li>
+										<li class="two mbl-vrsn">Coupons</li>
+										<li class="three">Price</li>
+										<li class="last"></li>
+									</ul>
+									<ul class="lines">
+										<li class="one cmn">vendor 1<span>Conditions</span></li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="rent-btn">Rent It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one cmn">vendor 2<span>Conditions</span></li>
+										<li class="two"><img src="img/coupon.png" class="img-fluid cupon" alt=""></li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="rent-btn">Rent It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one cmn">vendor 3<span>Conditions</span></li>
+										<li class="two"><img src="img/coupon.png" class="img-fluid cupon" alt=""></li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="rent-btn">Rent It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one cmn">vendor 4<span>Conditions</span></li>
+										<li class="two"><img src="img/coupon.png" class="img-fluid cupon" alt=""></li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="rent-btn">Rent It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one cmn">vendor 5</li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn grey-btn">Rent It</a></li>
+									</ul>
+									<ul class="lines lst-ln">
+										<li class="one cmn">vendor 6</li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn grey-btn">Rent It</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="details">
+								<div class="detail1 detail11">
+									<ul class="hdr">
+										<li class="one">Digital Rentals</li>
+										<li class="two mbl-vrsn">Coupons</li>
+										<li class="three">Price</li>
+										<li class="last"></li>
+									</ul>
+									<ul class="lines">
+										<li class="one cmn">vendor 1<span>Conditions</span></li>
+										<li class="two"><img src="img/coupon.png" class="img-fluid cupon" alt=""></li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="rent-btn">Rent It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one cmn">vendor 2<span>Conditions</span></li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="rent-btn">Rent It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one cmn">vendor 3<span>Conditions</span></li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="rent-btn">Rent It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one cmn">vendor 4<span>Conditions</span></li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="rent-btn">Rent It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one cmn">vendor 5</li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn grey-btn">Rent It</a></li>
+									</ul>
+									<ul class="lines lst-ln">
+										<li class="one cmn">vendor 6</li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn grey-btn">Rent It</a></li>
+									</ul>
+								</div>
+								<div class="detail1">
+									<h4 style="display: none;">Other Material</h4>
+									<ul class="hdr">
+										<li class="one">Study Guides</li>
+										<li class="two mbl-vrsn">Coupons</li>
+										<li class="three">Price</li>
+										<li class="last"></li>
+									</ul>
+									<ul class="lines">
+										<li class="one cmn">vendor 1<span>Conditions</span></li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn">Buy It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one">vendor 2</li>
+										<li class="two mbl-vrsn">-</li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="rent-btn">Rent It</a></li>
+									</ul>
+									<ul class="hdr hdrr">
+										<li class="one">Study Guides</li>
+										<li class="two mbl-vrsn">Coupons</li>
+										<li class="three">Price</li>
+										<li class="last"></li>
+									</ul>
+									<h4 class="new" style="display: none;">Digital/Rental</h4>
+									<ul class="lines">
+										<li class="one">vendor 4</li>
+										<li class="two"><img src="img/coupon.png" class="img-fluid cupon" alt=""></li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn">Buy It</a></li>
+									</ul>
+									<ul class="lines">
+										<li class="one cmn">vendor 5<span>Conditions</span></li>
+										<li class="two"><img src="img/coupon.png" class="img-fluid cupon" alt=""></li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="rent-btn">Rent It</a></li>
+									</ul>
+									<ul class="lines lst-ln">
+										<li class="one cmn">vendor 6<span>Conditions</span></li>
+										<li class="two"><img src="img/coupon.png" class="img-fluid cupon" alt=""></li>
+										<li class="three"><strong>$000</strong><sup>00</sup></li>
+										<li class="last"><a href="#" class="buy-btn grey-btn">Rent It</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="full-block">
+								<h2>Suggested Material</h2>
+								<div class="all-items">
+									<div class="item">
+										<img src="img/material.png" alt="">
+										<h4><span>$</span>98<sup>00</sup></h4>
+										<p>Visual And Computational Plasma<br>Physics</p>
+										<h3>by James Jang-Yu Hsu</h3>
+										<div class="fvstrs"><img src="img/3star.png" class="img-fluid fv-str" alt=""></div>
+										<ul>
+											<li><strong>Paperback</strong></li>
+											<li><strong>Formats: </strong>Paperbak, Hardcover</li>
+											<li><strong>Sellers: </strong>Amazon, Bbooks, Vbooks</li>
+										</ul>
+									</div>
+									<div class="item">
+										<img src="img/material2.png" alt="">
+										<h4><span>$</span>98<sup>00</sup></h4>
+										<p>Mathematics for Physics: An Illustrated</p>
+										<h3>by Philip Gibson</h3>
+										<div class="fvstrs"><img src="img/4star.png" class="img-fluid fv-str" alt=""></div>
+										<ul>
+											<li><strong>Hardcover</strong></li>
+											<li><strong>Formats: </strong>Digital, Paperback</li>
+											<li><strong>Sellers: </strong>Amazon, electrobooks, Cbooks</li>
+										</ul>
+									</div>
+									
+									<div class="item">
+										<img src="img/material3.png" alt="">
+										<h4><span>$</span>53<sup>00</sup></h4>
+										<p>Conversations on Quantum Gravity
+											1st Edition</p>
+										<h3>by Writing Axis</h3>
+										<div class="fvstrs"><img src="img/4star.png" class="img-fluid fv-str" alt=""></div>
+										<ul>
+											<li><strong>Hardcover</strong></li>
+											<li><strong>Formats: </strong>Hardcover, Digital</li>
+											<li><strong>Sellers: </strong>ebay, amazon, cbooks</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="full-block">
+								<h2>Related Material</h2>
+								<div class="all-items all-items2">
+									<div class="item item2">
+										<img src="img/pro-1.jpg" alt="">
+										<h4><span>$</span>00<sup>00</sup></h4>
+										<p>Amazon Basics Woodcased #2 Pencils, Pre-sharpened, HB Lead - Box of 150, Bulk...</p>
+									</div>
+									<div class="item item2">
+										<img src="img/pro-2.jpg" alt="">
+										<h4><span>$</span>00<sup>00</sup></h4>
+										<p>TICONDEROGA Pencils, Wood-
+											Cased, Pre-Sharpened, Graphite #2 HB Soft, Yellow, 240-Pack...</p>
+									</div>
+									<div class="item item2">
+										<img src="img/pro-3.jpg" alt="">
+										<h4><span>$</span>00<sup>00</sup></h4>
+										<p>Adorox (Assorted (144 Sharpeners)) Bulk Miniature Plastic Pencil Sharpener Color...</p>
+									</div>
+									<div class="item item2">
+										<img src="img/pro-4.jpg" alt="">
+										<h4><span>$</span>00<sup>00</sup></h4>
+										<p>Adorox (Assorted (144 Sharpeners)) Bulk Miniature Plastic Pencil Sharpener Color...</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="footer">
+            <div class="footer-row">
+               <div class="footer1">
+                  <ul>
+                     <li><a href="index.html" class="hdr">KibiBooks 2022 ©</a></li>
+                     <li><a href="contact.html">Contact Us</a></li>
+                     <li class="last"><a href="#">Follow Us</a></li>
+                  </ul>
+               </div>
+               <div class="footer2">
+                  <ul>
+					<li><a href="about.html">About Us</a></li>
+					<li class="last"><a href="partner.html">Partners</a></li>
+                  </ul>
+               </div>
+      
+               <div class="footer3">
+                  <ul>
+                     <li><a href="help.html">Help & Support</a></li>
+                     <li class="last"><a href="#" data-toggle="modal" data-target="#myModal4">Customer Reviews</a></li>
+                  </ul>
+               </div>
+               <div class="footer4">
+                  <ul>
+                     <li><a href="disclaimer.html">Disclaimer</a></li>
+                     <li><a href="terms.html">Terms of Use</a></li>
+                     <li><a href="privacy.html">Privacy Policy</a></li>
+					 <li class="last"><a href="cookies.html">Cookies Policy</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div><!-- footer -->
+      </div>
+
+	  <div class="modal fade" id="myModal4" role="dialog">
+		<div class="modal-dialog">
+		   <div class="modal-content">
+			  <div class="modal-body">
+				 <div class="customer-text">
+					<button type="button" class="close" data-dismiss="modal"><i class="far fa-times-circle"></i></button>
+					<h3>Customer Reviews</h3>
+					<div class="custom1">
+					   <p>How satisfied are you with the way the information is conveyed?</p>
+					   <div class="custom1-row">
+						  <ul>
+							 <li>
+								<label class="contain">1
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">2
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">3
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">4
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">5
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">6
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">7
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">8
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">9
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li class="last">
+								<label class="contain">10
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+						  </ul>
+					   </div>
+					   <div class="custom2-row">
+						  <ul>
+							 <li>Not at all</li>
+							 <li class="mid">Enough</li>
+							 <li class="last">Very much</li>
+						  </ul>
+					   </div>
+					</div>
+					<div class="custom1 custom11">
+					   <p>How easy was it to find what you were looking for?</p>
+					   <div class="custom1-row">
+						  <ul>
+							 <li>
+								<label class="contain">1
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">2
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">3
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">4
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">5
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">6
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">7
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">8
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">9
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li class="last">
+								<label class="contain">10
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+						  </ul>
+					   </div>
+					   <div class="custom2-row">
+						  <ul>
+							 <li>Not at all</li>
+							 <li class="mid">Enough</li>
+							 <li class="last">Very much</li>
+						  </ul>
+					   </div>
+					</div>
+					<div class="custom1">
+					   <p>What would you suggest we change to better assist you?</p>
+					   <form method="post" action="contact.php">
+						  <textarea class="area" placeholder="500 characters"></textarea>
+						  <input class="Btnn" type="submit" name="Submit" value="Submit">
+					   </form>   
+					</div>
+				 </div>
+			  </div>
+		   </div>
+		</div>
+	 </div> 
+	 <div class="modal fade modal222" id="myModal2" role="dialog">
+		<div class="modal-dialog">
+		   <div class="modal-content">
+			  <div class="modal-body">
+				 <div class="mod-bdy mod-bdy2">
+					<button type="button" class="close" data-dismiss="modal"><i class="far fa-times-circle"></i></button>
+					<h4>Hello!<br>
+					   Sign In or Register</h4>  
+					<ul>
+					   <li><a class="fb" href="#"><img src="img/facebook.png" class="img-fluid fb" alt=""> Sign in with Facebook</a></li>
+					   <li class="midd">or</li>
+					   <li><a class="ggl" href="#"><img src="img/google.png" class="img-fluid fb" alt=""> Sign in with Google</a></li>
+					</ul>    
+				 </div>
+			  </div>
+		   </div>
+		</div>
+	 </div> 
+	 <div class="modal fade" id="myModal3" role="dialog">
+		<div class="modal-dialog">
+		   <div class="modal-content">
+			  <div class="modal-body">
+				 <div class="sell-text">
+					<button type="button" class="close" data-dismiss="modal"><i class="far fa-times-circle"></i></button>
+					<h3>Sell your Textbook</h3>
+					<div class="sell-text-flex">
+					   <img src="img/sell-book.png" class="img-fluid sl-bk" alt="">
+					   <div class="sell-text-right">
+						  <h4>The Language of Composition: Reading, Writing,<br>
+							 Rhetoric | Thired Edition</h4>
+						  <p>by Renee H. Shea, Lawrence Scalon, Robin Dissin Aufses,<br>
+							 Megan Harowitz, Pankiewicz (Authors)</p>
+						  <ul>
+							 <li>ISBN 10: 1285741552</li>
+							 <li class="last">ISBN-13: 978-1285741550</li>
+						  </ul>   
+					   </div>
+					</div>
+					<div class="sell-price">
+					   <div class="sell1 ">
+						  <h6>Vendor 1</h6>
+						  <h5 class="one">$48<span>13</span></h5>
+						  <a href="#" class="buy-btn">Buy It</a>
+					   </div>
+					   <div class="sell1 ">
+						  <h6>Vendor 2</h6>
+						  <h5 class="two">$47<span>67</span></h5>
+						  <a href="#" class="buy-btn">Buy It</a>
+					   </div>
+					   <div class="sell1 sell2">
+						  <h6>Vendor 3</h6>
+						  <h5 class="three">$44<span>99</span></h5>
+						  <a href="#" class="buy-btn">Buy It</a>
+					   </div>
+					   <div class="sell1 sell3">
+						  <h6>Vendor 4</h6>
+						  <h5 class="four">$4<span>57</span></h5>
+						  <a href="#" class="buy-btn">Buy It</a>
+					   </div>
+					</div>
+				 </div>
+			  </div>
+		   </div>
+		</div>
+	 </div> 
+      <!-- Script -->
+
+	  <script type="text/javascript">
+        function ReadMoreLess() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var iMoreLess = document.getElementById("iMoreLess");
+            var lblText = document.getElementById("lblText");
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                iMoreLess.className = "fas fa-chevron-right";
+                lblText.innerHTML = "Show More";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                iMoreLess.className = "fas fa-chevron-left";
+                lblText.innerHTML = "Show Less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+
+<script type="text/javascript">
+	function ReadMoreLess2() {
+		var dots = document.getElementById("dots2");
+		var moreText = document.getElementById("more2");
+		var iMoreLess = document.getElementById("iMoreLess2");
+		var lblText = document.getElementById("lblText2");
+		if (dots.style.display === "none") {
+			dots.style.display = "inline";
+			iMoreLess2.className = "fas fa-chevron-right";
+			lblText2.innerHTML = "Show More";
+			moreText.style.display = "none";
+		} else {
+			dots.style.display = "none";
+			iMoreLess2.className = "fas fa-chevron-left";
+			lblText2.innerHTML = "Show Less";
+			moreText.style.display = "inline";
+		}
+	}
+</script>
+
+<script>
+ /* When the user clicks on the button, 
+ toggle between hiding and showing the dropdown content */
+ function myFunction() {
+   document.getElementById("myDropdown").classList.toggle("show");
+ }
+ 
+ // Close the dropdown if the user clicks outside of it
+ window.onclick = function(event) {
+   if (!event.target.matches('.dropbtn')) {
+	 var dropdowns = document.getElementsByClassName("dropdown-content");
+	 var i;
+	 for (i = 0; i < dropdowns.length; i++) {
+	   var openDropdown = dropdowns[i];
+	   if (openDropdown.classList.contains('show')) {
+		 openDropdown.classList.remove('show');
+	   }
+	 }
+   }
+ }
+ </script>
+ 
+<script>
+$(document).ready(function(){
+  $("#closebtn").click(function(){
+    $("#mySide").hide();
+  });
+  $("#first").click(function(){
+    $("#mySide").show();
+  });
+});
+</script> 
+   </body>
+</html>

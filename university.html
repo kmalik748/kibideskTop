@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>KibiBooks</title>
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script> 	
+
+      <link href="css/countrySelect.min.css" type="text/css" rel="stylesheet">
+      <!--Website CSS -->
+	  <link href="css/style.css" type="text/css" rel="stylesheet">
+	  <link href="css/aside.css" type="text/css" rel="stylesheet">
+	  <link href="css/university.css" type="text/css" rel="stylesheet">
+      <!-- FontAwesome CSS -->
+      <script src="https://kit.fontawesome.com/00d920835c.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+      <!-- Custom Fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <script src="js/jquery-3.5.1.min.js"></script>
+   </head>
+   <body>
+      <div class="main-body">
+		
+		 <div class="item-main">
+			<div class="item-main-row">
+            <div class="mob-menu">
+					<div class="header-row">
+						<a class="sm-logo" href="index.html"><img src="img/mobile-logo.png" class="log-pic img-fluid"></a>
+						<div class="dropdown">
+							<button id="first" type="button" class="tg-btn" data-toggle="dropdown"></button>
+							<div id="mySide" class="sidebar2">
+								<div onClick="topFunction(this)" id="myBtn" class="neew2">
+									<div class="texts">
+										<a href="#" id="closebtn" class="closebtn2"><i class="fas fa-times"></i></a>
+										<div class="left">
+                                
+                                 <div class="login-register">
+                                    <a href="#" class="lg-reg" style="background: transparent;" data-toggle="modal" data-target="#myModal2">Hello! Sign In</a>
+                                 </div>
+                                 <div class="sell-books">
+                                    <a href="index2.html">Sell Textbooks</a>
+                                 </div>
+                                 
+                                 <div class="sell-books">
+                                    <a href="#">Recently Viewed</a>
+                                 </div>
+                                 
+                                 <div class="items">
+                                    
+                                    <div class="searches">
+                                       
+                                       <div class="clear-box">
+                                          <a href="#">Clear Searches</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="other-links">
+                                    <a href="university.html" >University Pages</a>
+                                 </div>
+                              </div>
+									</div>
+								</div>
+							</div>
+					  </div>   
+					</div>
+				</div>
+				<div class="top-block">
+					<div class="left left2">
+					<a href="index.html" class="cnt-logo"><img src="img/logo.png" class="img-fluid cnt-lgo" alt=""></a>		
+					<div class="logo-block">
+						
+					</div>
+					<div class="login-register">
+						<a href="#" class="lg-reg" style="background: transparent;" data-toggle="modal" data-target="#myModal2">Hello! Sign In</a>
+					</div>
+					<div class="sell-books">
+						<a href="index2.html">Sell Textbooks</a>
+					</div>
+					
+               <div class="sell-books">
+						<a href="#">Recently Viewed</a>
+					</div>
+					
+					<div class="items">
+						
+						<div class="searches">
+							
+							<div class="clear-box">
+								<a href="#">Clear Searches</a>
+							</div>
+						</div>
+					</div>
+					<div class="other-links">
+						<a href="university.html" >University Pages</a>
+					</div>
+					</div>
+					<div class="right">
+						<div class="search-country-bar item-search">
+							<div class="search-bar">
+							   <div class="search-box">
+								  <input type="text" placeholder="Search for ISBN, Title or Author">
+								  <button><i class="far fa-search"></i></button>
+							   </div>
+							</div>
+							<div class="new-dpn">
+							   <div class="dropdown">
+								  <button class="button" type="button" class="btn" data-toggle="dropdown">
+									 <img src="img/flag.png" class="flag img-fluid">
+								  </button>
+								  <div class="dropdown-menu">
+									 <a class="dropdown-item"  href="#" target="_blank"><img src="img/flag1.png" class="img-fluid"></a>
+									 <a class="dropdown-item"  href="#" target="_blank"><img src="img/flag2.png" class="img-fluid"></a>
+									 <a class="dropdown-item"  href="#" target="_blank"><img src="img/flag4.png" class="img-fluid"></a>
+									 <a class="dropdown-item dropdown-item-last"  href="#" target="_blank"><img src="img/flag3.png" class="img-fluid"></a>
+								  </div>
+							   </div>  
+							</div>
+						 </div>
+						<div class="all-content-block">
+							<div class="univers">
+								<h2>Universities & Collages Pages</h2>
+                        <div class="univers-row">
+                           <div class="univers1">
+                              <img src="img/uni1.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text">  
+                                 <a href="http://www.smc.edu/ target=" target="_blank"><h4>Santa Monica College</h4></a>
+                                 <a href="https://en.wikipedia.org/wiki/Santa_Monica_College" target="_blank"><p>Wiki Page</p></a>
+                                 <a href="https://www.facebook.com/SantaMonicaCollegeOfficial" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni2.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text">  
+                                 <a href="http://www.columbia.edu/" target="_blank"><h4>Columbia University</h4></a>
+                                 <a href="https://en.wikipedia.org/wiki/Columbia_University" target="_blank"><p>Wiki Page</p></a>
+                                 <a href="https://www.facebook.com/columbia/" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni2.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text">  
+                                 <a href="https://www.unc.edu/" target="_blank"><h4>University of North Carolina</h4></a>
+                                 <a href="#" target="_blank"><p>Wiki Page</p></a>
+                                 <a href="https://www.facebook.com/uncchapelhill/" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="univers-row">
+                           <div class="univers1">
+                              <img src="img/uni4.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text">  
+                                 <div class="in-text in-text2">
+                                    <a href="https://www.harvard.edu/" target="_blank"><h4>Harvard University</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/Harvard_University" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/Harvard/" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni5.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text">  
+                                 <div class="in-text in-text2">
+                                    <a href="https://www.upenn.edu/" target="_blank"><h4>University of Pennsylvania</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/University_of_Pennsylvania" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/UnivPennsylvania" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni6.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text">  
+                                 <div class="in-text in-text2">
+                                    <a href="https://www.cmu.edu/" target="_blank"><h4>Carnegie Mellon University</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/Carnegie_Mellon_University" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/uncchapelhill/" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="univers-row">
+                           <div class="univers1">
+                              <img src="img/uni7.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text"> 
+                                 <div class="in-text">
+                                    <a href="http://www.ucla.edu/" target="_blank"><h4>University California Los 
+                                       Angeles</h4></a>
+                                       <a href="https://en.wikipedia.org/wiki/University_of_California,_Los_Angeles" target="_blank"><p>Wiki Page</p></a>
+                                 </div> 
+                                 
+                                 <a href="https://www.facebook.com/UCLA/" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni8.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text">  
+                                 <div class="in-text">
+                                    <a href="https://www.princeton.edu/" target="_blank"><h4 class="single">Princeton University</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/Princeton_University" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/PrincetonU/" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni9.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text"> 
+                                 <div class="in-text"> 
+                                    <a href="https://www.utexas.edu/" target="_blank"><h4 class="single">Uiversity of Texas At Austin</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/University_of_Texas_at_Austin" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/UTAustinTX" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="univers-row">
+                           <div class="univers1">
+                              <img src="img/uni10.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text"> 
+                                 <div class="in-text">
+                                    <a href="https://www.usc.edu/" target="_blank"><h4>Uiversity of Southern
+                                       California</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/University_of_Southern_California" target="_blank"><p>Wiki Page</p></a>
+                                 </div> 
+                                 
+                                 <a href="https://www.facebook.com/usc/" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni11.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text">  
+                                 <div class="in-text">
+                                    <a href="https://www.mit.edu/" target="_blank"><h4>Massachusetts Institute
+                                       of Technology</h4></a>
+                                       <a href="https://en.wikipedia.org/wiki/Massachusetts_Institute_of_Technology" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/MITnews" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni12.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text"> 
+                                 <div class="in-text"> 
+                                    <a href="https://www.nyu.edu/" target="_blank"><h4 class="single">NYU</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/New_York_University" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/NYU" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="univers-row">
+                           <div class="univers1">
+                              <img src="img/uni13.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text"> 
+                                 <div class="in-text in-text2">
+                                    <a href="https://www.ucsb.edu/" target="_blank"><h4>University of Santa Barbara(UCSB)</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/University_of_California,_Santa_Barbara" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/ucsantabarbara" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni14.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text"> 
+                                 <div class="in-text in-text2">
+                                    <a href="https://www.caltech.edu/" target="_blank"><h4>California Institute of
+                                       Technology</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/California_Institute_of_Technology" target="_blank"><p>Wiki Page</p></a>
+                                 </div> 
+                                 <a href="https://www.facebook.com/californiainstituteoftechnology" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni15.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text"> 
+                                 <div class="in-text in-text2">
+                                    <a href="https://www.gatech.edu/" target="_blank"><h4>Georgia Institute of
+                                       Technology</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/Georgia_Tech" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/georgiatech" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="univers-row">
+                           <div class="univers1">
+                              <img src="img/uni16.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text"> 
+                                 <div class="in-text in-text2">
+                                    <a href="https://www.pepperdine.edu/" target="_blank"><h4>Pepperdine University</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/Pepperdine_University" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/pepperdine" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni17.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text">  
+                                 <div class="in-text in-text2">
+                                    <a href="https://www.uchicago.edu/" target="_blank"><h4>University of Chicago</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/University_of_Chicago" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/uchicago" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni18.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text"> 
+                                 <div class="in-text in-text2">
+                                    <a href="https://www.uillinois.edu/" target="_blank"><h4>University of Illinois</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/University_of_Illinois_system" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/uillinois.edu/" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="univers-row">
+                           <div class="univers1">
+                              <img src="img/uni19.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text"> 
+                                 <div class="in-text in-text2">
+                                    <a href="https://www.stanford.edu/" target="_blank"><h4>Stanford University</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/Stanford_University" target="_blank"><p>Wiki Page</p></a> 
+                                 </div>
+                                 <a href="https://www.facebook.com/Stanford/" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni20.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text"> 
+                                 <div class="in-text in-text2">
+                                    <a href="https://www.duke.edu/" target="_blank"><h4>Duke University</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/Duke_University" target="_blank"><p>Wiki Page</p></a>
+                                 </div> 
+                                 <a href="https://www.facebook.com/DukeUniv" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni21.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text"> 
+                                 <div class="in-text in-text2">
+                                    <a href="https://www.vanderbilt.edu" target="_blank"><h4>Vanderbilt University</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/Vanderbilt_University" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/vanderbilt/" class="facebk">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="univers-row">
+                           <div class="univers1">
+                              <img src="img/uni22.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text"> 
+                                 <div class="in-text in-text2">
+                                    <a href="https://www.yale.edu/" target="_blank"><h4>Yale University</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/Yale_University" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/YaleUniversity" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni23.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text">  
+                                 <div class="in-text in-text2">
+                                    <a href="#" target="_blank"><h4>University of Michigan</h4></a>
+                                    <a href="#" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="#" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni24.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text"> 
+                                 <div class="in-text in-text2">
+                                    <a href="https://www.ufl.edu/" target="_blank"><h4>University of Florida</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/University_of_Florida" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/uflorida/" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="univers-row">
+                           <div class="univers1">
+                              <img src="img/uni25.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text">
+                                 <div class="in-text in-text2">
+                                    <a href="#" target="_blank"><h4>Brown University</h4></a>
+                                    <a href="#" target="_blank"><p>Wiki Page</p></a> 
+                                 </div> 
+                                 <a href="#" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni26.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text">  
+                                 <div class="in-text in-text2">
+                                    <a href="https://www.jhu.edu/" target="_blank"><h4>Johns Hopkins University</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/Johns_Hopkins_University" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/johnshopkinsuniversity" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni27.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text"> 
+                                 <div class="in-text in-text2">
+                                    <a href="https://home.dartmouth.edu/" target="_blank"><h4>Dartmouth College</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/Dartmouth_College" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/Dartmouth/" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        
+                        <div class="univers-row univers-roww">
+                           <div class="univers1">
+                              <img src="img/uni28.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text"> 
+                                 <div class="in-text">
+                                    <a href="https://www.cornell.edu/" target="_blank"><h4>Cornell University</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/Cornell_University" target="_blank"><p>Wiki Page</p></a>
+                                 </div> 
+                                 
+                                 <a href="https://www.facebook.com/Cornell" class="facebk">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni29.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text">  
+                                 <div class="in-text">
+                                    <a href="https://www.northwestern.edu/" target="_blank"><h4>Northwestern University</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/Northwestern_University" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/NorthwesternU" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                           <div class="univers1">
+                              <img src="img/uni30.png" class="img-fluid unipic" alt="">
+                              <div class="univers1-text"> 
+                                 <div class="in-text"> 
+                                    <a href="https://www.virginia.edu/" target="_blank"><h4>University of Virginia</h4></a>
+                                    <a href="https://en.wikipedia.org/wiki/University_of_Virginia" target="_blank"><p>Wiki Page</p></a>
+                                 </div>
+                                 <a href="https://www.facebook.com/UniversityofVirginia/" class="facebk" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                        <a href="#" class="view">View More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		 </div><!-- item-main -->
+
+		 <div class="footer">
+         <div class="footer-row">
+            <div class="footer1">
+               <ul>
+                  <li><a href="index.html" class="hdr">KibiBooks 2022 ©</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li class="last"><a href="#">Follow Us</a></li>
+               </ul>
+            </div>
+            <div class="footer2">
+               <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li class="last"><a href="partner.html">Partners</a></li>
+               </ul>
+            </div>
+   
+            <div class="footer3">
+               <ul>
+                  <li><a href="help.html">Help & Support</a></li>
+                  <li class="last"><a href="#" data-toggle="modal" data-target="#myModal4">Customer Reviews</a></li>
+               </ul>
+            </div>
+            <div class="footer4">
+               <ul>
+                  <li><a href="disclaimer.html">Disclaimer</a></li>
+                  <li><a href="terms.html">Terms of Use</a></li>
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+             <li class="last"><a href="cookies.html">Cookies Policy</a></li>
+               </ul>
+            </div>
+         </div>
+      </div><!-- footer -->
+      </div>
+
+<div class="modal fade" id="myModal4" role="dialog">
+   <div class="modal-dialog modal-dialog3">
+      <div class="modal-content">
+         <div class="modal-body">
+            <div class="customer-text">
+               <button type="button" class="close" data-dismiss="modal"><i class="far fa-times-circle"></i></button>
+               <h3>Customer Reviews</h3>
+               <div class="custom1">
+                  <p>How satisfied are you with the way the information is conveyed?</p>
+                  <div class="custom1-row">
+                     <ul>
+                        <li>
+                           <label class="contain">1
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                        <li>
+                           <label class="contain">2
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                        <li>
+                           <label class="contain">3
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                        <li>
+                           <label class="contain">4
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                        <li>
+                           <label class="contain">5
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                        <li>
+                           <label class="contain">6
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                        <li>
+                           <label class="contain">7
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                        <li>
+                           <label class="contain">8
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                        <li>
+                           <label class="contain">9
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                        <li class="last">
+                           <label class="contain">10
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="custom2-row">
+                     <ul>
+                        <li>Not at all</li>
+                        <li class="mid">Enough</li>
+                        <li class="last">Very much</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="custom1 custom11">
+                  <p>How easy was it to find what you were looking for?</p>
+                  <div class="custom1-row">
+                     <ul>
+                        <li>
+                           <label class="contain">1
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                        <li>
+                           <label class="contain">2
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                        <li>
+                           <label class="contain">3
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                        <li>
+                           <label class="contain">4
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                        <li>
+                           <label class="contain">5
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                        <li>
+                           <label class="contain">6
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                        <li>
+                           <label class="contain">7
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                        <li>
+                           <label class="contain">8
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                        <li>
+                           <label class="contain">9
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                        <li class="last">
+                           <label class="contain">10
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                           </label>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="custom2-row">
+                     <ul>
+                        <li>Not at all</li>
+                        <li class="mid">Enough</li>
+                        <li class="last">Very much</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="custom1">
+                  <p>What would you suggest we change to better assist you?</p>
+                  <form method="post" action="contact.php">
+                     <textarea class="area" placeholder="500 characters"></textarea>
+                     <input class="Btnn" type="submit" name="Submit" value="Submit">
+                  </form>   
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div> 
+<div class="modal fade modal222" id="myModal2" role="dialog">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-body">
+            <div class="mod-bdy mod-bdy2">
+               <button type="button" class="close" data-dismiss="modal"><i class="far fa-times-circle"></i></button>
+               <h4>Hello!<br>
+                  Sign In or Register</h4>  
+               <ul>
+                  <li><a class="fb" href="#"><img src="img/facebook.png" class="img-fluid fb" alt=""> Sign in with Facebook</a></li>
+                  <li class="midd">or</li>
+                  <li><a class="ggl" href="#"><img src="img/google.png" class="img-fluid fb" alt=""> Sign in with Google</a></li>
+               </ul>    
+            </div>
+         </div>
+      </div>
+   </div>
+</div> 
+      <!-- Script -->
+		<script src="js/countrySelect.min.js"></script>
+		<script>
+		  $("#country").countrySelect({
+				defaultCountry: "us",
+				// onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+				responsiveDropdown: true,
+				preferredCountries: ['in', 'gb', 'us'],
+			});
+		</script>
+        <script>
+            $('.main-body .top-block .left .items .searches .search-box a').click(function(e){
+                e.preventDefault();
+                $(this).parent().remove();
+            
+            })
+            $(".main-body .top-block .right .all-content-block .detail-boxes .single-box .all-items .title-bar h5 a.droptrigger").click(function(e){
+                e.preventDefault();
+                console.log($(this).parents('.title-bar').children('.dropdown'));
+              $(this).parents('.title-bar').children('.dropdown').slideToggle();
+            });
+        </script>
+<script>
+$(document).ready(function(){
+  $("#closebtn").click(function(){
+    $("#mySide").hide();
+  });
+  $("#first").click(function(){
+    $("#mySide").show();
+  });
+});
+</script>         
+   </body>
+</html>

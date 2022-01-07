@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+*{box-sizing: border-box;}
+body{ width:100%; padding:0; margin:0; background:#1E1F22;  font-family: 'Poppins', sans-serif; }
+
+a{ outline:none;text-decoration:none; }
+a:focus, a:hover{ outline:none; text-decoration:none; }
+ul{ padding:0; margin:0; list-style:none; }
+img.img-fluid{
+	max-width: 100%;
+	height: auto;
+}
+a {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+}
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('../fonts/TimesNewRomanPS-BoldMT.woff2') format('woff2'),
+        url('../fonts/TimesNewRomanPS-BoldMT.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/**** cont-main *****/
+
+a.image{
+    
+}

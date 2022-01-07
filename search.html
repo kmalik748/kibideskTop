@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>KibiBooks</title>
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script> 	
+
+      <link href="css/countrySelect.min.css" type="text/css" rel="stylesheet">
+      <!--Website CSS -->
+	  <link href="css/style.css" type="text/css" rel="stylesheet">
+	  <link href="css/aside.css" type="text/css" rel="stylesheet">
+	  <link href="css/university.css" type="text/css" rel="stylesheet">
+	  <link href="css/search.css" type="text/css" rel="stylesheet">
+      <!-- FontAwesome CSS -->
+      <script src="https://kit.fontawesome.com/00d920835c.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+      <!-- Custom Fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <script src="js/jquery-3.5.1.min.js"></script>
+   </head>
+   <body>
+      <div class="main-body">
+		<div class="item-main">
+			<div class="item-main-row">
+				<div class="mob-menu">
+					<div class="header-row">
+						<a class="sm-logo" href="index.html"><img src="img/mobile-logo.png" class="log-pic img-fluid"></a>
+						<div class="dropdown">
+							<button id="first" type="button" class="tg-btn" data-toggle="dropdown"></button>
+							<div id="mySide" class="sidebar2">
+								<div onClick="topFunction(this)" id="myBtn" class="neew2">
+									<div class="texts">
+										<a href="#" id="closebtn" class="closebtn2"><i class="fas fa-times"></i></a>
+										<div class="left">
+											
+											<div class="login-register login-register2 login-registerr">
+												<div class="dropdown">
+													<a href="#" onclick="myFunction()" class="dropbtn anti-dbtn">
+														Welcome Anti
+													   <div id="myDropdown" class="dropdown-content">
+														  <a href="#">Sign Out</a>
+														  <a href="#">Unregister</a>
+														</div>
+													</a>
+												  </div>
+											</div>
+											<div class="sell-books">
+												<a href="index2.html">Sell TextBooks</a>
+											</div>
+											<div class="sell-books sell-books2">
+												<a href="item.html" class="item">Recently Viewed</a>
+											</div>
+											
+											<div class="items">
+												
+												<div class="searches">
+													<a href="book.html"><div class="search-box search-box2">
+														<h4 class="spn">0198708636
+														</h4>
+													</div></a>
+													
+													
+													<div class="clear-box">
+														<a href="#">Clear Searches</a>
+													</div>
+												</div>
+											</div>
+											<div class="other-links">
+												<a href="university.html">University Pages</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					  </div>   
+					</div>
+				</div>
+				<div class="top-block">
+					<div class="left left2">
+						<a href="index.html" class="cnt-logo"><img src="img/logo.png" class="img-fluid cnt-lgo" alt=""></a>		
+						<div class="logo-block">
+							
+						</div>
+						<div class="login-register">
+							<a href="#" class="lg-reg" style="background: transparent;" data-toggle="modal" data-target="#myModal2">Hello! Sign In</a>
+						</div>
+						<div class="sell-books">
+							<a href="index2.html">Sell Textbooks</a>
+						</div>
+						<div class="sell-books">
+							<a href="#">Recently Viewed</a>
+						</div>
+						
+						<div class="items">
+							
+							<div class="searches">
+								
+								<div class="clear-box">
+									<a href="#">Clear Searches</a>
+								</div>
+							</div>
+						</div>
+						<div class="other-links">
+							<a href="university.html">University Pages</a>
+						</div>
+					</div>
+					<div class="right">
+						<div class="search-country-bar item-search">
+							<div class="search-bar">
+							   <div class="search-box">
+								  <input type="text" placeholder="Search for ISBN, Title or Author">
+								  <button><i class="far fa-search"></i></button>
+							   </div>
+							</div>
+							<div class="new-dpn">
+							   <div class="dropdown">
+								  <button class="button" type="button" class="btn" data-toggle="dropdown">
+									 <img src="img/flag.png" class="flag img-fluid">
+								  </button>
+								  <div class="dropdown-menu">
+									 <a class="dropdown-item"  href="#" target="_blank"><img src="img/flag1.png" class="img-fluid"></a>
+									 <a class="dropdown-item"  href="#" target="_blank"><img src="img/flag2.png" class="img-fluid"></a>
+									 <a class="dropdown-item"  href="#" target="_blank"><img src="img/flag4.png" class="img-fluid"></a>
+									 <a class="dropdown-item dropdown-item-last"  href="#" target="_blank"><img src="img/flag3.png" class="img-fluid"></a>
+								  </div>
+							   </div>  
+							</div>
+						 </div>
+						<div class="all-content-block">
+							<div class="edition">
+								<div class="edition-row">
+									<div class="edition-left">
+										<div class="mob-texts">
+											<h3>Modern Physics with Modern Computational Methods: for Scientists and Engineers | 3rd Edition</h3>
+											<h4>by John Morrison (Author)</h4>
+											
+										</div>
+										<div class="edition-flex">
+											<div class="post">
+												<img src="img/postt1.png" class="poster-pic img-fluid" alt="">
+												<div class="post-text" style="display: block; opacity: 1; background: #3f4056;display: flex; align-items: center;">
+													<h4 style="margin: 0;">Coming Soon</h4>
+												</div>
+											</div>
+											<a href="#" class="star"><img src="img/str1.png" class="str img-fluid" alt=""></a>
+										</div>
+										<div class="editionn">
+											<h3>Modern Physics with Modern Computational Methods: for Scientists and Engineers | 3rd Edition</h3>
+											<h4>by John Morrison (Author)</h4>
+											
+											<div class="about-left">
+												<div class="about1">
+													<ul>
+														<li>Year: 2020</li>
+														<li>Edition: 3nd</li>
+														<li class="last lastt">Format: Digital</li>
+													</ul>
+												</div>
+												<div class="about1">
+													<ul>
+														<li>ISBN 10: 012817790X</li>
+														<li>ISBN 13: 978-0128177907</li>
+														<li class="last">Publisher: Academic Press</li>
+													</ul>
+												</div>
+											</div>
+											<div class="about-left about-left2">
+												<div class="about1">
+													<ul>
+														<li>Year: 2020</li>
+														<li>Edition: 3nd</li>
+														<li>Format: Digital</li>
+													</ul>
+												</div>
+												<div class="about1">
+													<ul>
+														
+														
+													</ul>
+												</div>
+											</div>
+											<div class="newlines">
+												<ul>
+													<li>ISBN 10: 012817790X</li>
+													<li>ISBN 13: 978-0128177907</li>
+													<li class="last" style="font-weight: normal;">Publisher: Academic Press</li>
+												</ul>
+											</div>
+											<div class="btnns">
+												<ul>
+													<li><a href="book.html" class="see-btn">See All</a></li>
+													<li><a href="item.html" class="price-btn">Best Prices</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="edition-right">
+										<div class="about">
+											<div class="about-row">
+												<div class="about-right">
+													<ul>
+														<li><a href="#" class="one">See All</a></li>
+														<li class="last"><a href="item.html" class="two">Best Price</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="edition">
+								<div class="edition-row">
+									<div class="edition-left">
+										<div class="mob-texts">
+											<h3>University Physics with Modern Physics (14th Edition) | 14th Edition</h3>
+											<h4>by Hugh D. Young, Roger A. Freedman (Authors)</h4>
+										</div>
+										<div class="edition-flex">
+											<div class="post">
+												<img src="img/poster2.png" class="poster-pic img-fluid" alt="">
+												<div class="post-text">
+													<h4>Coming Soon</h4>
+												</div>
+											</div>
+											<a href="#" class="star"><img src="img/str1.png" class="str img-fluid" alt=""></a>
+										</div>
+										<div class="editionn">
+											<h3>University Physics with Modern Physics (14th Edition) | 14th Edition</h3>
+											<h4>by Hugh D. Young, Roger A. Freedman (Authors)</h4>
+											<div class="about-left">
+												<div class="about1">
+													<ul>
+														<li>Year: 2015</li>
+														<li>Edition: 14nd</li>
+														<li class="last">Format: Hardcover</li>
+													</ul>
+												</div>
+												<div class="about1">
+													<ul>
+														<li>ISBN 10: 0321973615</li>
+														<li>ISBN 13: 978-0321973610</li>
+														<li class="last">Publisher: Pearson</li>
+													</ul>
+												</div>
+											</div>
+											<div class="about-left about-left2">
+												<div class="about1">
+													<ul>
+														<li>Year: 2015</li>
+														<li>Edition: 14th</li>
+														<li>Format: Hardcover</li>
+													</ul>
+												</div>
+											</div>
+											<div class="newlines">
+												<ul>
+													<li>ISBN 10: 0321973615</li>
+													<li>ISBN 13: 978-0321973610</li>
+													<li class="last" style="font-weight: normal;">Publisher: Pearson</li>
+												</ul>
+											</div>
+											<div class="btnns">
+												<ul>
+													<li><a href="book.html" class="see-btn">See All</a></li>
+													<li><a href="item.html" class="price-btn">Best Prices</a></li>
+												</ul>
+											</div>
+										</div>
+										
+									</div>
+									<div class="edition-right">
+										<div class="about">
+											<div class="about-row">
+												<div class="about-right">
+													<ul>
+														<li><a href="#" class="one">See All</a></li>
+														<li class="last"><a href="item.html" class="two">Best Price</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="edition">
+								<div class="edition-row">
+									<div class="edition-left">
+										<div class="mob-texts">
+											<h3>University Physics with Modern Physics | 15th Edition</h3>
+											<h4>by Hugh Young, Roger Freedman (Authors)</h4>
+										</div>
+										<div class="edition-flex">
+											<div class="post">
+												<img src="img/postt4.png" class="poster-pic img-fluid" alt="">
+												<div class="post-text">
+													<h4>Coming Soon</h4>
+												</div>
+											</div>
+											<a href="#" class="star"><img src="img/str1.png" class="str img-fluid" alt=""></a>
+										</div>
+										
+										<div class="editionn">
+											<h3>University Physics with Modern Physics | 15th Edition</h3>
+											<h4>by Hugh Young, Roger Freedman (Authors)</h4>
+											<div class="about-left">
+												<div class="about1">
+													<ul>
+														<li>Year: 2019</li>
+														<li>Edition: 15nd</li>
+														<li class="last">Format: Hardcover</li>
+													</ul>
+												</div>
+												
+												
+											</div>
+											<div class="about-left about-left2">
+												<div class="about1">
+													<ul>
+														<li>Year: 2019</li>
+														<li>Edition: 15th</li>
+														<li>Format: Hardcover</li>
+													</ul>
+												</div>
+											</div>
+											<div class="newlines">
+												<ul>
+													<li>ISBN 10: 0135159555</li>
+													<li>ISBN 13: 978-0135159552</li>
+													<li class="last" style="font-weight: normal;">Publisher: Pearson</li>
+												</ul>
+											</div>
+											<div class="btnns">
+												<ul>
+													<li><a href="book.html" class="see-btn">See All</a></li>
+													<li><a href="item.html" class="price-btn">Best Prices</a></li>
+												</ul>
+											</div>
+										</div>
+										
+									</div>
+									<div class="edition-right">
+										<div class="about">
+											<div class="about-row">
+												<div class="about-right">
+													<ul>
+														<li><a href="#" class="one">See All</a></li>
+														<li class="last"><a href="item.html" class="two">Best Price</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="edition">
+								<div class="edition-row">
+									<div class="edition-left">
+										<div class="mob-texts">
+											<h3>Physics for Scientists and Engineers: A Strategic Approach with Modern Physics | 4th Edition</h3>
+											<h4>by Randall Knight (Author)</h4>
+										</div>
+										<div class="edition-flex">
+											<div class="post">
+												<img src="img/postt6.png" class="poster-pic img-fluid" alt="">
+												<div class="post-text">
+													<h4>Coming Soon</h4>
+												</div>
+											</div>
+											<a href="#" class="star"><img src="img/str2.png" class="str img-fluid" alt=""></a>
+										</div>
+										<div class="editionn">
+											<h3>Physics for Scientists and Engineers: A Strategic Approach with Modern Physics | 4th Edition</h3>
+											<h4>by Randall Knight (Author)</h4>
+											<div class="about-left">
+												<div class="about1">
+													<ul>
+														<li>Year: 2016</li>
+														<li>Edition: 4th</li>
+														<li class="last">Format: Hardcover</li>
+													</ul>
+												</div>
+												<div class="about1">
+													<ul>
+														<li>ISBN 10: 0133942651</li>
+														<li>ISBN 13: 978-0133942651</li>
+														<li class="last">Publisher: Pearson</li>
+													</ul>
+												</div>
+											</div>
+											<div class="about-left about-left2">
+												<div class="about1">
+													<ul>
+														<li>Year: 2016</li>
+														<li>Edition: 4th</li>
+														<li>Format: Hardcover</li>
+													</ul>
+												</div>
+											</div>
+											<div class="newlines">
+												<ul>
+													<li>ISBN 10: 0133942651</li>
+													<li>ISBN 13: 978-0133942651</li>
+													<li class="last" style="font-weight: normal;">Publisher: Pearson</li>
+												</ul>
+											</div>
+											<div class="btnns">
+												<ul>
+													<li><a href="book.html" class="see-btn">See All</a></li>
+													<li><a href="item.html" class="price-btn">Best Prices</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="edition-right">
+										<div class="about">
+											<div class="about-row">
+												<div class="about-right">
+													<ul>
+														<li><a href="#" class="one">See All</a></li>
+														<li class="last"><a href="item.html" class="two">Best Price</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="edition">
+								<div class="edition-row">
+									<div class="edition-left">
+										<div class="mob-texts">
+											<h3>Sears and Zemansky's University Physics with Modern Physics, 13th Edition | 13th Edition</h3>
+											<h4>by Hugh D. Young, Roger A. Freedman, A. Lewis Ford (Authors)</h4>
+										</div>
+										<div class="edition-flex">
+											<div class="post">
+												<img src="img/postt5.png" class="poster-pic img-fluid" alt="">
+												<div class="post-text">
+													<h4>Coming Soon</h4>
+												</div>
+											</div>
+											<a href="#" class="star"><img src="img/str1.png" class="str img-fluid" alt=""></a>
+										</div>
+										<div class="editionn">
+											<h3>Sears and Zemansky's University Physics with Modern Physics, 13th Edition | 13th Edition</h3>
+											<h4>by Hugh D. Young, Roger A. Freedman, A. Lewis Ford (Authors)</h4>
+											<div class="about-left">
+												<div class="about1">
+													<ul>
+														<li>Year: 2011</li>
+														<li>Edition: 13nd</li>
+														<li class="last">Format: Paperback</li>
+													</ul>
+												</div>
+												<div class="about1">
+													<ul>
+														<li>ISBN 10: 0321696867</li>
+														<li>ISBN 13: 978-0321696861</li>
+														<li class="last">Publisher: Addison-Wesley</li>
+													</ul>
+												</div>
+											</div>
+											<div class="about-left about-left2">
+												<div class="about1">
+													<ul>
+														<li>Year: 2011</li>
+														<li>Edition: 13nd</li>
+														<li>Format: Paperback</li>
+													</ul>
+												</div>
+											</div>
+											<div class="newlines">
+												<ul>
+													<li>ISBN 10: 0321696867</li>
+													<li>ISBN 13: 978-0321696861</li>
+													<li class="last" style="font-weight: normal;">Publisher: Addison-Wesley</li>
+												</ul>
+											</div>
+											<div class="btnns">
+												<ul>
+													<li><a href="book.html" class="see-btn">See All</a></li>
+													<li><a href="item.html" class="price-btn">Best Prices</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="edition-right">
+										<div class="about">
+											<div class="about-row">
+												<div class="about-right">
+													<ul>
+														<li><a href="#" class="one">See All</a></li>
+														<li class="last"><a href="item.html" class="two">Best Price</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="edition">
+								<div class="edition-row">
+									<div class="edition-left">
+										<div class="mob-texts">
+											<h3>College Physics | 11th Edition</h3>
+											<h4>by Raymond A. Serway, Chris Vuille (Authors)</h4>
+										</div>
+										<div class="edition-flex">
+											<div class="post">
+												<img src="img/postt3.png" class="poster-pic img-fluid" alt="">
+												<div class="post-text">
+													<h4>Coming Soon</h4>
+												</div>
+											</div>
+											<a href="#" class="star"><img src="img/str3.png" class="str img-fluid" alt=""></a>
+										</div>
+										<div class="editionn">
+											<h3>College Physics | 11th Edition</h3>
+											<h4>by Raymond A. Serway, Chris Vuille (Authors)</h4>
+											<div class="about-left">
+												<div class="about1">
+													<ul>
+														<li>Year: 2017</li>
+														<li>Edition: 11nd</li>
+														<li class="last">Format: Loose Leaf</li>
+													</ul>
+												</div>
+												<div class="about1">
+													<ul>
+														<li>ISBN 10: 978130595230</li>
+														<li>ISBN 13: 978-1305952300</li>
+														<li class="last">Publisher: Cengage Learning</li>
+													</ul>
+												</div>
+											</div>
+											<div class="about-left about-left2">
+												<div class="about1">
+													<ul>
+														<li>Year: 2017</li>
+														<li>Edition: 11nd</li>
+														<li>Format: Loose Leaf</li>
+													</ul>
+												</div>
+											</div>
+											<div class="newlines">
+												<ul>
+													<li>ISBN 10: 978130595230</li>
+													<li>ISBN 13: 978-1305952300</li>
+													<li class="last" style="font-weight: normal;">Publisher: Cengage Learning</li>
+												</ul>
+											</div>
+											<div class="btnns">
+												<ul>
+													<li><a href="book.html" class="see-btn">See All</a></li>
+													<li><a href="item.html" class="price-btn">Best Prices</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="edition-right">
+										<div class="about">
+											<div class="about-row">
+												<div class="about-right">
+													<ul>
+														<li><a href="#" class="one">See All</a></li>
+														<li class="last"><a href="item.html" class="two">Best Price</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="edition">
+								<div class="edition-row">
+									<div class="edition-left">
+										<div class="mob-texts">
+											<h3>College Physics for the AP® Physics 1 Course | 2nd Edition</h3>
+											<h4>by Gay Stewart, Roger Freedman, Todd Ruskell, Philip R. Kesten (Authors)</h4>
+										</div>
+										<div class="edition-flex">
+											<div class="post">
+												<img src="img/postt2.png" class="poster-pic img-fluid" alt="">
+												<div class="post-text">
+													<h4>Coming Soon</h4>
+												</div>
+											</div>
+											<a href="#" class="star"><img src="img/str1.png" class="str img-fluid" alt=""></a>
+										</div>
+										<div class="editionn">
+											<h3>College Physics for the AP® Physics 1 Course | 2nd Edition</h3>
+											<h4>by Gay Stewart, Roger Freedman, Todd Ruskell, Philip R. Kesten (Authors)</h4>
+											<div class="about-left">
+												<div class="about1">
+													<ul>
+														<li>Year: 2019</li>
+														<li>Edition: 2nd</li>
+														<li class="last">Format: Hardcover</li>
+													</ul>
+												</div>
+												<div class="about1">
+													<ul>
+														<li>ISBN 10: 131910097X</li>
+														<li>ISBN 13: 978-1319100971</li>
+														<li class="last">Publisher: W. H. Freeman</li>
+													</ul>
+												</div>
+											</div>
+											<div class="about-left about-left2">
+												<div class="about1">
+													<ul>
+														<li>Year: 2019</li>
+														<li>Edition: 2nd</li>
+														<li>Format: Hardcover</li>
+													</ul>
+												</div>
+											</div>
+											<div class="newlines">
+												<ul>
+													<li>ISBN 10: 131910097X</li>
+													<li>ISBN 13: 978-1319100971</li>
+													<li class="last" style="font-weight: normal;">Publisher: W. H. Freeman</li>
+												</ul>
+											</div>
+											<div class="btnns">
+												<ul>
+													<li><a href="book.html" class="see-btn">See All</a></li>
+													<li><a href="item.html" class="price-btn">Best Prices</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="edition-right">
+										<div class="about">
+											<div class="about-row">
+												<div class="about-right">
+													<ul>
+														<li><a href="#" class="one">See All</a></li>
+														<li class="last"><a href="item.html" class="two">Best Price</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="edition">
+								<div class="edition-row">
+									<div class="edition-left">
+										<div class="mob-texts">
+											<h3>Applied Computational Physics Illustrated | Edition</h3>
+											<h4>by Joseph F. Boudreau, Eric S. Swanson (Authors)</h4>
+										</div>
+										<div class="edition-flex">
+											<div class="post">
+												<img src="img/postt1.png" class="poster-pic img-fluid" alt="">
+												<div class="post-text">
+													<h4>Coming Soon</h4>
+												</div>
+											</div>
+											<a href="#" class="star"><img src="img/str1.png" class="str img-fluid" alt=""></a>
+										</div>
+										<div class="editionn">
+											<h3>Applied Computational Physics Illustrated | Edition</h3>
+											<h4>by Joseph F. Boudreau, Eric S. Swanson (Authors)</h4>
+											<div class="about-left">
+												<div class="about1">
+													<ul>
+														<li>Year: 2018</li>
+														<li>Edition: Illustrated</li>
+														<li class="last">Format: Digital</li>
+													</ul>
+												</div>
+												<div class="about1">
+													<ul>
+														<li>ISBN 10: 0198708645</li>
+														<li>ISBN 13: 978-0198708643</li>
+														<li class="last">Publisher: OUP Oxford</li>
+													</ul>
+												</div>
+											</div>
+											<div class="about-left about-left2">
+												<div class="about1">
+													<ul>
+														<li>Year: 2018</li>
+														<li>Edition: Illustrated</li>
+														<li>Format: Digital</li>
+													</ul>
+												</div>
+											</div>
+											<div class="newlines">
+												<ul>
+													<li>ISBN 10: 0198708645</li>
+													<li>ISBN 13: 978-0198708643</li>
+													<li class="last" style="font-weight: normal;">Publisher: OUP Oxford</li>
+												</ul>
+											</div>
+											<div class="btnns">
+												<ul>
+													<li><a href="book.html" class="see-btn">See All</a></li>
+													<li><a href="item.html" class="price-btn">Best Prices</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="edition-right">
+										<div class="about">
+											<div class="about-row">
+												<div class="about-right">
+													<ul>
+														<li><a href="book.html" class="one">See All</a></li>
+														<li class="last"><a href="item.html" class="two">Best Price</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<a href="#" class="viw">View More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		 
+		<div class="footer">
+            <div class="footer-row">
+               <div class="footer1">
+                  <ul>
+                     <li><a href="index.html" class="hdr">KibiBooks 2022 ©</a></li>
+                     <li><a href="contact.html">Contact Us</a></li>
+                     <li class="last"><a href="#">Follow Us</a></li>
+                  </ul>
+               </div>
+               <div class="footer2">
+                  <ul>
+					<li><a href="about.html">About Us</a></li>
+					<li class="last"><a href="partner.html">Partners</a></li>
+                  </ul>
+               </div>
+      
+               <div class="footer3">
+                  <ul>
+                     <li><a href="help.html">Help & Support</a></li>
+                     <li class="last"><a href="#" data-toggle="modal" data-target="#myModal4">Customer Reviews</a></li>
+                  </ul>
+               </div>
+               <div class="footer4">
+                  <ul>
+                     <li><a href="disclaimer.html">Disclaimer</a></li>
+                     <li><a href="terms.html">Terms of Use</a></li>
+                     <li><a href="privacy.html">Privacy Policy</a></li>
+					 <li class="last"><a href="cookies.html">Cookies Policy</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div><!-- footer -->
+      </div>
+
+
+      <!-- Script -->
+	  <div class="modal fade" id="myModal4" role="dialog">
+		<div class="modal-dialog modal-dialog3">
+		   <div class="modal-content">
+			  <div class="modal-body">
+				 <div class="customer-text">
+					<button type="button" class="close" data-dismiss="modal"><i class="far fa-times-circle"></i></button>
+					<h3>Customer Reviews</h3>
+					<div class="custom1">
+					   <p>How satisfied are you with the way the information is conveyed?</p>
+					   <div class="custom1-row">
+						  <ul>
+							 <li>
+								<label class="contain">1
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">2
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">3
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">4
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">5
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">6
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">7
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">8
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">9
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li class="last">
+								<label class="contain">10
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+						  </ul>
+					   </div>
+					   <div class="custom2-row">
+						  <ul>
+							 <li>Not at all</li>
+							 <li class="mid">Enough</li>
+							 <li class="last">Very much</li>
+						  </ul>
+					   </div>
+					</div>
+					<div class="custom1 custom11">
+					   <p>How easy was it to find what you were looking for?</p>
+					   <div class="custom1-row">
+						  <ul>
+							 <li>
+								<label class="contain">1
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">2
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">3
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">4
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">5
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">6
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">7
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">8
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li>
+								<label class="contain">9
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+							 <li class="last">
+								<label class="contain">10
+								   <input type="radio" name="radio">
+								   <span class="checkmark"></span>
+								</label>
+							 </li>
+						  </ul>
+					   </div>
+					   <div class="custom2-row">
+						  <ul>
+							 <li>Not at all</li>
+							 <li class="mid">Enough</li>
+							 <li class="last">Very much</li>
+						  </ul>
+					   </div>
+					</div>
+					<div class="custom1">
+					   <p>What would you suggest we change to better assist you?</p>
+					   <form method="post" action="contact.php">
+						  <textarea class="area" placeholder="500 characters"></textarea>
+						  <input class="Btnn" type="submit" name="Submit" value="Submit">
+					   </form>   
+					</div>
+				 </div>
+			  </div>
+		   </div>
+		</div>
+	 </div> 
+	 <div class="modal fade modal222" id="myModal2" role="dialog">
+		<div class="modal-dialog">
+		   <div class="modal-content">
+			  <div class="modal-body">
+				 <div class="mod-bdy mod-bdy2">
+					<button type="button" class="close" data-dismiss="modal"><i class="far fa-times-circle"></i></button>
+					<h4>Hello!<br>
+					   Sign In or Register</h4>  
+					<ul>
+					   <li><a class="fb" href="#"><img src="img/facebook.png" class="img-fluid fb" alt=""> Sign in with Facebook</a></li>
+					   <li class="midd">or</li>
+					   <li><a class="ggl" href="#"><img src="img/google.png" class="img-fluid fb" alt=""> Sign in with Google</a></li>
+					</ul>    
+				 </div>
+			  </div>
+		   </div>
+		</div>
+	 </div> 
+	 <script>
+		$(document).ready(function(){
+		  $("#closebtn").click(function(){
+			$("#mySide").hide();
+		  });
+		  $("#first").click(function(){
+			$("#mySide").show();
+		  });
+		});
+		</script> 	 
+   </body>
+</html>

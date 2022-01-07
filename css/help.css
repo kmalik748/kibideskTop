@@ -1,0 +1,275 @@
+@charset "utf-8";
+/* CSS Document */
+*{box-sizing: border-box;}
+body{ width:100%; padding:0; margin:0; background:#1E1F22;  font-family: 'Poppins', sans-serif; }
+
+a{ outline:none;text-decoration:none; }
+a:focus, a:hover{ outline:none; text-decoration:none; }
+ul{ padding:0; margin:0; list-style:none; }
+img.img-fluid{
+	max-width: 100%;
+	height: auto;
+}
+a {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+}
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('../fonts/TimesNewRomanPS-BoldMT.woff2') format('woff2'),
+        url('../fonts/TimesNewRomanPS-BoldMT.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*.disc-header-row h2 {
+    font-size: 27px;
+} */
+
+/**** disc-main *****/
+
+.disc-main {
+    margin: 0px 0px 0px 0px;
+    padding: 60px 0px 0px 0px;
+    background: transparent;
+    overflow: hidden;
+    width: 100%;
+}
+.disc-main-row {
+    margin: 0px 0px 0px 25px;
+    padding: 32px 0px 20px 0px;
+    width: 100%;
+    border-radius: 40px 0px 0px 40px;
+    background: #f5f5fb;
+}
+.disc-main-text {
+    margin: 0px auto 0px auto;
+    padding: 0px 0px 0px 0px;
+    width: 70%;
+}
+.disc-main-text h6 {
+    margin: 0px auto 20px auto;
+    padding: 0px 0px 0px 0px;
+    font-weight: 300;
+    font-size: 17px;
+    color: #1e1f22;
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+}
+.disc-main-text p{
+    margin: 0px 0px 11px 0px;
+    padding: 0px 0px 0px 0px;
+    font-weight: normal;
+    font-size: 18px;
+    color: #28292a;
+    text-align: justify;
+    line-height: 37px;
+}
+.disc-main-text p.last{
+    margin: 0px 0px 0px 0px;
+} 
+.disc-main-flex {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 15px 0px 0px;
+    overflow: hidden;
+}
+.disc-main-left{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+}
+.disc-main-right{
+    display: none;
+}
+
+/****** responsive *****/
+
+@media (max-width :991px) and (min-device-width :768px){
+
+
+}
+
+
+/*** accordian *****/
+
+.card-header {
+    padding: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-bottom: 0px solid rgba(0,0,0,.125);
+    border-radius: 0px !important;
+}
+.card {
+    background-color: transparent;
+    border: 0px solid rgba(0,0,0,.125);
+    border-radius: 0;
+}
+.card-body {
+    padding: 0px 0px 22px 0px;
+}
+a.card-link {
+    margin: 0px 0px 5px 0px;
+    padding: 8px 48px 0px 22px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #28292a;
+    background: url(../img/minus.png) right 2px no-repeat;
+    width: max-content;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+a.card-link h5{
+    line-height: 1.6;
+    font-weight: 400;
+}
+a.card-link::before {
+    margin: 18px 0px 0px 0px;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    content: '';
+    background: url(../img/dot.png) center center no-repeat;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+a.card-link.collapsed{
+    background: url(../img/plus.png) right 2px no-repeat;
+}
+a.card-link span{
+    margin: 0px 10px 0px 0px;
+    display: none;
+}
+.card-text{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.card-text p {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 24px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #1e1f22;
+    line-height: 34px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer {
+    padding: 38px 30px 40px 30px;
+} 
+
+
+@media (max-width :1660px) and (min-device-width :1280px){
+
+/*
+.disc-main-text h6{
+    font-size: 17px;
+}
+a.card-link h5 {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+a.card-link::before {
+    margin: 17px 0px 0px 0px;
+} */
+
+
+}
+
+
+.modal-dialog2 {
+    margin: 60px auto 0px auto !important;
+}
+
+
+/****** responsive *****/
+
+@media (max-width :1660px) and (min-device-width :1280px){
+
+
+/** about */
+.disc-main-row {
+    padding: 35px 40px 38px 0px;    
+}
+.disc-main-text {
+    width: 70%;
+}
+
+
+}
+
+@media (max-width :991px) and (min-device-width :768px){
+
+.disc-main-text {
+    width: 73%;
+}
+
+}
+h5.mob{
+    display: none;
+}
+@media (max-width :767px) and (min-device-width :280px){
+
+.disc-main-text {
+    width: 100%;
+    padding: 0px 15px 0px 16px;
+}
+.disc-main-text h6 {
+    margin: 0px auto 20px auto;
+    font-size: 14px;
+    line-height: 22px;
+}
+a.card-link h5 {
+    font-size: 13px;
+}
+a.card-link {
+    margin: 0px 0px 5px 0px;
+    padding: 8px 30px 0px 15px;
+} 
+a.card-link.collapsed {
+    background: url(../img/plus.png) right 6px no-repeat;
+    background-size: 28px;
+    width: 100%;
+}
+a.card-link {
+    background: url(../img/minus.png) right 6px no-repeat;
+    background-size: 28px;
+    width: 100%;
+}
+a.card-link::before {
+    margin: 18px 0px 0px 0px;
+    top: -4px;
+    left: 4px;
+    width: 5px;
+    height: 5px;
+}
+.card-text p {
+    padding: 0px 0px 0px 14px;
+    font-size: 13px;
+    line-height: 24px;
+}
+.card-body {
+    padding: 0px 0px 0px 0px;
+}
+
+h5.dsk{
+    display: none;
+}
+h5.mob{
+    display: block;
+}
+a.card-link2.collapsed {
+    background: url(../img/plus.png) left 55px bottom -8px no-repeat;
+    background-size: 28px;
+}
+a.card-link2 {
+    background: url(../img/minus.png) left 55px bottom -8px no-repeat;
+    background-size: 28px;
+}
+}
